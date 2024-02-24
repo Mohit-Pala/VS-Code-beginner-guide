@@ -65,11 +65,15 @@ a:link:hover , a:visited:hover{
     padding: 2rem;
     justify-content: center;
 }
-
 .nav-button {
     width: 30%;
     margin-left: 3rem;
     margin-right: 3rem;
     background-color: var(--navbar-bg-color);
     border: none;
+}
+
+img {
+    height: 50%;
+    width: 50%;
 }
