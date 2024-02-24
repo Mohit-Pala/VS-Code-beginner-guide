@@ -72,3 +72,8 @@ a:link:hover , a:visited:hover{
     background-color: var(--navbar-bg-color);
     border: none;
 }
+
+img {
+    height: 50%;
+    width: 50%;
+}
