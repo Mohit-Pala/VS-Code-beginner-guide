@@ -31,6 +31,7 @@ summary {
 
 li {
     padding: 0.5rem;
+    text-align: left;
 }
 
 .material-symbols-outlined {
@@ -76,4 +77,8 @@ a:link:hover , a:visited:hover{
 img {
     height: 50%;
     width: 50%;
+}
+
+.left-align {
+    text-align: left;
 }
