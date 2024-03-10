@@ -77,3 +77,7 @@ img {
     height: 50%;
     width: 50%;
 }
+
+.left-align {
+    text-align: left;
+}
