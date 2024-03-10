@@ -77,3 +77,11 @@ img {
     height: 50%;
     width: 50%;
 }
+
+.logo {
+    width: 8rem;
+}
+
+.left-align {
+    text-align: left;
+}
