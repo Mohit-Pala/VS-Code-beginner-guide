@@ -1,12 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20,100,0,200" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20,100,0,200" />
     <link rel="stylesheet" href="WSL.css">
-    <title>Extensions</title>
+    <title>WSL Integration</title>
 </head>
+
 <body>
     <details class="nav-bar">
         <summary>
@@ -27,7 +30,7 @@
                         Setup
                     </a>
                 </li>
-                <li>                    
+                <li>
                     Getting Started
                     <ul class="side-nav-list">
                         <li>
@@ -67,7 +70,7 @@
                         Terminal
                     </a>
                 </li>
-                <li> 
+                <li>
                     Languages
                     <ul class="side-nav-list">
                         <li>
@@ -147,43 +150,101 @@
     </details>
 
     <div class="main-content">
-        <h1>Windows Subsystem for Linux</h1>
-        <h3>
-            Setup
-        </h3>
-        <ol>
-            <li>
-                <p>
-                    Veniam officia ea veniam exercitation exercitation velit nostrud excepteur exercitation nostrud amet elit labore.
-                </p>
-            </li>
+        <h1>WSL Integration</h1>
+        <p>
+            WSL - Windows subsystem for linux is a feature of windows 10 and above which allows you to run a linux
+            distro on a windows machine. It uses the windows hyper-v virtualization to provide a seamless linux
+            experience underneath windows. VS Code can be used inside of WSL with very simple setup.
+        </p>
 
-            <li>
-                <p>
-                    Veniam officia ea veniam exercitation exercitation velit nostrud excepteur exercitation nostrud amet elit labore.
-                </p>
-            </li>
+        <div class="left-align">
+            <h3>
+                System Requirements:
+            </h3>
 
-            <li>
-                <p>
-                    Veniam officia ea veniam exercitation exercitation velit nostrud excepteur exercitation nostrud amet elit labore.
-                </p>
-            </li>
-        </ol>
+            <ul>
+                <li>
+                    Windows 10 and above
+                </li>
+                <li>
+                    Windows subsystem for linux installed
+                </li>
+                <li>
+                    At Least one subsystem distro installed and updated
+                    <ul>
+                        <li>
+                            <b><i> sudo apt-get update </i></b> for debian based distros
+                        </li>
+                        <li>
+                            <b><i>sudo dnf update</i></b>
+                            for fedora based distros
+                        </li>
+                        <li>
+                            <b><i>sudo pacman -Syu </i></b> for arch based distros
+                        </li>
+                    </ul>
+                </li>
+            </ul>
 
-        <h3>
-            Running Code in WSL
-        </h3>
-        
-        <P>
-            Mollit sunt cillum eiusmod non. Excepteur adipisicing elit ullamco nostrud in mollit quis occaecat tempor. In ex id consectetur proident dolor ullamco. Exercitation nisi voluptate ullamco exercitation nostrud excepteur quis veniam magna laborum.
+            <h3>
+                VS Code Extensions
+            </h3>
+            <ul>
+                <li>
+                    WSL - Microsoft
+                </li>
+                <li>
+                    (Optional) Remote Development extension pack - Microsoft
+                </li>
+            </ul>
+        </div>
+        <img src="../assets/images/Wsl_ext.png">
+        <div class="left-align">
+            <h3> Opening VS Code through WSL </h3>
+            <ol>
+                <li>
+                    Start your WSL distro using the start menu
+                </li>
+                <li>
+                    In the bash terminal, execute <b><i>code</i></b>
+                </li>
+                <li>
+                    VS Code should now open up on windows connected to WSL
+                </li>
+            </ol>
 
-            Irure culpa mollit proident sit elit Lorem excepteur duis irure enim duis. Amet fugiat et nostrud est incididunt excepteur in. Cillum quis et consectetur nisi laboris aliqua in ullamco. Exercitation in officia velit cupidatat magna.
+            <h3>
+                Connecting to WSL through VS Code
+            </h3>
 
-            Eu consequat occaecat excepteur ex qui minim exercitation aliqua dolore est dolore. Id incididunt nulla esse officia dolore aliqua. Lorem elit sint laboris Lorem cillum laboris veniam. Lorem aute minim non eu officia deserunt ipsum ipsum nisi consequat ipsum esse. Ut deserunt fugiat culpa consectetur esse fugiat sunt eu ad esse deserunt eu. Duis ut excepteur pariatur commodo anim aliquip. Excepteur cillum commodo elit tempor aute.
-        </P>
-
-        <img src="../assets/images/Placeholder.png">
+            <ol>
+                <li>
+                    Open VS Code
+                </li>
+                <li>
+                    Open the command palette 
+                </li>
+                <li>
+                    Run <b><i>REMOTE_WSL:New Window</i></b>
+                </li>
+                <li>
+                    VS Code should open up a new window connected to WSL
+                </li>
+            </ol>
+        </div>
+        <div class="bottom-nav-bar">
+            <button class="nav-button" id="prev">
+                <span class="material-symbols-outlined">
+                    arrow_back_ios
+                </span>
+            </button>
+            <button class="nav-button" id="next">
+                <span class="material-symbols-outlined">
+                    arrow_forward_ios
+                </span>
+            </button>
+        </div>
     </div>
 </body>
+
 </html>
