@@ -92,3 +92,8 @@ a:visited {
 a:link:hover , a:visited:hover{
     color: var(--paragraph);
 }
+
+.logo {
+    height: 20%;
+    width: 20%;
+}
